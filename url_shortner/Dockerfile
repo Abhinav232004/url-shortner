@@ -1,4 +1,4 @@
-FROM python:3.10-alpine
+FROM python:3.8-alpine
 
 ARG BUILD_DEPS="gcc python3-dev musl-dev postgresql-dev jpeg-dev zlib-dev libjpeg libffi-dev openjdk8"
 RUN apk --no-cache add ${BUILD_DEPS}
